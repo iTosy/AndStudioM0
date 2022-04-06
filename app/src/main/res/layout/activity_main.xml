@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="connect"
+        android:textSize="34sp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send"
+        android:textSize="34sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_editor_absoluteX="122dp" />
+
+    <Button
+        android:id="@+id/ter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="terminate"
+        android:textSize="34sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/rec"
+        tools:layout_editor_absoluteX="83dp" />
+
+    <TextView
+        android:id="@+id/rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="waiting..."
+        android:textSize="34sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/send"
+        tools:layout_editor_absoluteX="122dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="34sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/connect"
+        tools:layout_editor_absoluteX="-5dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
